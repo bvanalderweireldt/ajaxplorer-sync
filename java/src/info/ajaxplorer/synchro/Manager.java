@@ -151,6 +151,9 @@ public class Manager {
         		}catch(Exception e){        			
         		}
         	}
+        	else{
+        		Logger.getRootLogger().info("Wrong argument passed : "+args[i]);
+        	}
     	}
     	if(language != null && country == null) country = language.toUpperCase();
         if (language == null) {
